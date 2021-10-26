@@ -1,0 +1,56 @@
+<mvc:View
+    controllerName="com.hirose.mnp.lot.ziemnplot.controller.ProductionPlan"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m">
+    <Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>PageTitle}" showNavButton="true" navButtonPress=".onNavBack">
+                <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                    header="1. Product Assembly" press="OnProductAssembly">
+                    <TileContent>
+			            <ImageContent src="sap-icon://eam-work-order" />
+		            </TileContent>
+                </GenericTile>
+                <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                    header="2. Parts" press="OnParts">
+                    <TileContent>
+			            <ImageContent src="sap-icon://shelf" />
+		            </TileContent>
+                </GenericTile>
+                <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                    header="3. Lot Linking" press="OnParts">
+                    <TileContent>
+			            <ImageContent src="sap-icon://shelf" />
+		            </TileContent>
+                </GenericTile>
+                <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                    header="4. Lot Label Cancellation" press="OnParts">
+                    <TileContent>
+			            <ImageContent src="sap-icon://shelf" />
+		            </TileContent>
+                </GenericTile>
+                <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                    header="5. Partial Lot Quantity" press="OnPartialLot">
+                    <TileContent>
+			            <ImageContent src="sap-icon://basket" />
+		            </TileContent>
+                </GenericTile>
+                <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                    header="6. Lot Label w/o Prod Order" press="OnLotLabel">
+                    <TileContent>
+			            <ImageContent src="sap-icon://tags" />
+		            </TileContent>
+                </GenericTile>
+                <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                    header="6.  Prod. Order w/o Lot Mgt." press="OnLotLabel">
+                    <TileContent>
+			            <ImageContent src="sap-icon://tags" />
+		            </TileContent>
+                </GenericTile>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>   

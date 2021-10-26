@@ -1,0 +1,21 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.hirose.mnp.lot.ziemnplot.controller.Packing" displayBlock="true" viewName="ProductionAssembly">
+    <Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>PageTitle}" showNavButton="true" navButtonPress=".onNavBack">
+                <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="1. Standard Packing" press="OnStandardPacking">
+                    <TileContent>
+			            <ImageContent src="sap-icon://eam-work-order"/>
+		            </TileContent>
+                </GenericTile>
+                <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="2. Double Packing" press="OnDoublePacking">
+                    <TileContent>
+			            <ImageContent src="sap-icon://eam-work-order"/>
+		            </TileContent>
+                </GenericTile>
+                </Page>
+                </pages>
+                </App>
+                </Shell>
+
+</mvc:View>

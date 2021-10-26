@@ -1,0 +1,44 @@
+<mvc:View
+    controllerName="com.hirose.mnp.lot.ziemnplot.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>PageTitle}">
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                    header="1. Check Documents" press="OnCheckDocuments">
+                    <TileContent>
+			            <ImageContent src="sap-icon://check-availability" />
+		            </TileContent>
+                    </GenericTile>
+                    <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                    header="2. Production Plan" press="OnProdPlan">
+                    <TileContent>
+			            <ImageContent src="sap-icon://factory" />
+		            </TileContent>
+                    </GenericTile>
+                    <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                    header="3. Packing" press="OnPacking">
+                    <TileContent>
+			            <ImageContent src="sap-icon://product" />
+		            </TileContent>
+                    </GenericTile>
+                    <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                    header="4. Inspection" press="OnInspection">
+                    <TileContent>
+			            <ImageContent src="sap-icon://inspection" />
+		            </TileContent>
+                    </GenericTile>
+                    <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                    header="5. Product Failure" press="OnProductFailure">
+                    <TileContent>
+			            <ImageContent src="sap-icon://decline" />
+		            </TileContent>
+                    </GenericTile>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
